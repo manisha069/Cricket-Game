@@ -3,6 +3,7 @@ import random
 class UserBats:
     def __init__(self):
         self.score = 0
+        #manishagupta
     
     def game(self):
         print("Enter '''QUIT''' to quit the game else enter number between 1-10")
@@ -11,6 +12,7 @@ class UserBats:
             if mar == "QUIT":
                 print("you have quit the game")
                 break
+                #manishagupta
             elif mar.isdigit():
                 mark= int(mar)
                 if mark > 10 or mark < 1:
@@ -26,6 +28,7 @@ class UserBats:
                     self.score += mark
                     print("Your score : ", self.score)
                     print()
+                    #manishagupta
             else:
                 print("INVALID INPUT, GAME CLOSED")
                 return 0
@@ -38,6 +41,7 @@ class CompBats:
         self.new_score = 0
     
     def game2(self, score):
+        #manishagupta
         print("Enter '''QUIT''' to quit the game ")
         while True:
             mar=input()
@@ -49,6 +53,7 @@ class CompBats:
                 if mark > 10 or mark < 1:
                     print("INVALID INPUT, GAME CLOSED")
                     return 0
+                #manishagupta
                 else:
                     comp= random.randint(1, 10)
                     print("you chose : ", mark)
@@ -56,6 +61,7 @@ class CompBats:
                     if comp == mark:
                         print("COMPUTER OUT")
                         return self.new_score
+                    #manishagupta
                     self.new_score += comp
                     print("Computer's score : ", self.new_score)
                     if self.new_score > score:
@@ -64,12 +70,12 @@ class CompBats:
                 print("INVALID INPUT, GAME CLOSED")
                 return 0
 
-
-
+#manishagupta
 
 # if __name__ == "__main__":
 print("WELCOME! LETS PLAY!")
 print()
+#manishagupta
 print("Rules:\n 1. Player Bats first \n 2. Input a random number between 1-10\n 3. Batter will be considered OUT when both the batter and bowler have the same number")
 print()
 
@@ -84,4 +90,7 @@ if m!=0:
         print("USER WINS!!")
     else:
         print("COMPUTER WINS!!")
-        
+    print("MANISHA GUPTA")
+    
+    
+   #manishagupta
