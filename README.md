@@ -8,6 +8,7 @@ Rules:
  
 ## Future scope
 - Add GUI
+- Optimize Code
 
 ## Contributor
 - [Manisha Gupta](https://manisha069.github.io/) 
